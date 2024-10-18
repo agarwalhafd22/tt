@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #152257; /* Navbar color */
+    color: white;
+    padding: 30px 0; /* Vertical padding */
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%; /* Initial width of the container */
+    max-width: 1520px; /* Set max-width to limit container size */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: center; /* Center the white container inside */
+    align-items: center;
+    width: 100%;
+}
+
+/* Stretched white container with rounded borders */
+.inner-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 40px; /* Horizontal padding */
+    color: #152257;
+    width: 100%; /* Stretch across the entire navbar */
+    height: 80px; /* Ensure a defined height */
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between image and hamburger */
+    align-items: center; /* Center items vertically */
+}
+
+/* Logo image styling */
+.logo {
+    height: 60px; /* Adjust the height of the image */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Optional: Add space between logo and hamburger menu */
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Align hamburger lines vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0; /* Space between lines */
+    background-color: #152257; /* Change color to match the theme */
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Full-width image styling */
+.full-width-image {
+    background-image: url('images/conclave.png'); /* Background image */
+    background-size: cover; /* Make sure the image covers the container */
+    background-position: center; /* Center the image */
+    width: 100%; /* Full width of the screen */
+    height: 500px; /* Set the height */
+    position: relative;
+}
+
+/* Optional overlay to display text over the image */
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.image-overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.image-overlay p {
+    font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .image-overlay h1 {
+        font-size: 36px;
+    }
+
+    .image-overlay p {
+        font-size: 18px;
+    }
+}
